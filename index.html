@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown viewer</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css"
+        integrity="sha512-KUoB3bZ1XRBYj1QcH4BHCQjurAZnCO3WdrswyLDtp7BMwCw7dPZngSLqILf68SGgvnWHTD5pPaYrXi6wiRJ65g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.2/marked.min.js"
+        integrity="sha512-hzyXu3u+VDu/7vpPjRKFp9w33Idx7pWWNazPm+aCMRu26yZXFCby1gn1JxevVv3LDwnSbyKrvLo3JNdi4Qx1ww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.5/purify.min.js"
+        integrity="sha512-GaomFB92Lot7wDqZgVgLMJwQhuVUEcPHP99xmWSVE4Kq54t1jDyH7mdKDsmN8jOMSjiQq8pf7Et+OM4ml/PVMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <center>
+            <h2>Github Markdown to html</h2>
+        </center>
+    </div>
+    <div class="content">
+        <div class="container">
+            <textarea id="markdown"></textarea>
+            <div id="html" class="markdown-body"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
